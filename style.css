@@ -334,6 +334,7 @@ button { -webkit-tap-highlight-color: transparent; }
   font-size: clamp(1.1rem, 2vw, 1.34rem);
   line-height: 1.25;
   letter-spacing: -0.025em;
+  text-align: center;
 }
 
 .token-box {
