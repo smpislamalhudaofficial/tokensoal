@@ -73,9 +73,7 @@ button { -webkit-tap-highlight-color: transparent; }
 }
 
 .eyebrow,
-.section-kicker {
-  text-align: center;
-}
+.section-kicker,
 .footer-label {
   margin: 0;
   font-size: 0.72rem;
