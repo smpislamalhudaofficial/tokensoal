@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b4dc9" />
+  <meta name="description" content="Halaman token soal otomatis untuk kelas 7, 8, dan 9." />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <title>Token Soal</title>
+  <link rel="icon" href="assets/logo-sekolah.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-glow page-glow--one" aria-hidden="true"></div>
+  <div class="page-glow page-glow--two" aria-hidden="true"></div>
+
+  <main class="app-shell">
+    <header class="hero" aria-labelledby="page-title">
+      <img class="school-logo" src="assets/logo-sekolah.svg" alt="Logo sekolah" />
+      <p class="eyebrow">PORTAL UJIAN SEKOLAH</p>
+      <h1 id="page-title">TOKEN SOAL</h1>
+      <p id="dateLabel" class="date-label">Memuat tanggal sistem…</p>
+
+      <div id="statusChip" class="status-chip status-chip--loading" role="status" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="statusChipText">MENYIAPKAN DATA</span>
+      </div>
+    </header>
+
+    <section id="messagePanel" class="message-panel" aria-live="polite">
+      <div class="message-icon" aria-hidden="true">
+        <span id="messageIcon">⌛</span>
+      </div>
+      <div class="message-copy">
+        <h2 id="messageTitle">Menghubungkan ke sistem token</h2>
+        <p id="messageText">Data akan dimuat secara otomatis.</p>
+      </div>
+    </section>
+
+    <section id="countdownPanel" class="countdown-panel" aria-labelledby="countdownTitle" hidden>
+      <div class="countdown-heading">
+        <div>
+          <p id="countdownTitle" class="section-kicker">TOKEN BERGANTI DALAM</p>
+          <p id="nextChangeText" class="next-change-text">Menunggu jadwal berikutnya…</p>
+        </div>
+        <span class="auto-badge">AUTO UPDATE</span>
+      </div>
+
+      <div class="countdown" aria-live="off" aria-label="Hitung mundur">
+        <div class="time-unit">
+          <strong id="hours">00</strong>
+          <span>JAM</span>
+        </div>
+        <span class="time-separator" aria-hidden="true">:</span>
+        <div class="time-unit">
+          <strong id="minutes">00</strong>
+          <span>MENIT</span>
+        </div>
+        <span class="time-separator" aria-hidden="true">:</span>
+        <div class="time-unit">
+          <strong id="seconds">00</strong>
+          <span>DETIK</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="cardsSection" class="cards-section" aria-label="Token per kelas" hidden>
+      <div id="classCards" class="class-grid"></div>
+    </section>
+
+    <footer class="system-footer">
+      <div class="system-item">
+        <span class="footer-label">WAKTU SISTEM</span>
+        <strong id="serverClock">--:--:-- WIB</strong>
+      </div>
+      <span class="footer-divider" aria-hidden="true"></span>
+      <div class="system-item system-item--connection">
+        <span id="connectionDot" class="connection-dot"></span>
+        <span id="connectionText">Menghubungkan…</span>
+      </div>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
