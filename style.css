@@ -84,7 +84,7 @@ button { -webkit-tap-highlight-color: transparent; }
 
 .hero h1 {
   margin: 4px 0 4px;
-  font-size: clamp(2.2rem, 7vw, 4.35rem);
+  font-size: clamp(2.5rem, 8vw, 5rem);
   line-height: 0.98;
   letter-spacing: -0.055em;
   background: linear-gradient(118deg, var(--blue-950) 3%, var(--blue-700) 48%, #2595ff 100%);
