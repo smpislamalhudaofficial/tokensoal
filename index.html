@@ -8,7 +8,10 @@
   <meta name="robots" content="noindex, nofollow, noarchive" />
   <title>Token Soal</title>
   <link rel="icon" href="assets/logo-sekolah.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=1.1" />
 </head>
 <body>
   <div class="page-glow page-glow--one" aria-hidden="true"></div>
@@ -17,7 +20,7 @@
   <main class="app-shell">
     <header class="hero" aria-labelledby="page-title">
       <img class="school-logo" src="assets/logo-sekolah.svg" alt="Logo sekolah" />
-      <p class="eyebrow">PORTAL UJIAN SEMPIA</p>
+      <p class="eyebrow">PORTAL UJIAN SEKOLAH</p>
       <h1 id="page-title">TOKEN SOAL</h1>
       <p id="dateLabel" class="date-label">Memuat tanggal sistem…</p>
 
@@ -34,6 +37,7 @@
       <div class="message-copy">
         <h2 id="messageTitle">Menghubungkan ke sistem token</h2>
         <p id="messageText">Data akan dimuat secara otomatis.</p>
+        <button id="retryButton" class="retry-button" type="button" hidden>COBA LAGI</button>
       </div>
     </section>
 
@@ -83,7 +87,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-  <script src="config.js"></script>
-  <script src="script.js"></script>
+  <script src="config.js?v=1.1"></script>
+  <script src="script.js?v=1.1"></script>
 </body>
 </html>
