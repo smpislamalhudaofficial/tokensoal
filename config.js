@@ -1,7 +1,7 @@
 /** TOKEN SOAL V1.1 — ubah API_URL atau EDGE_URL sesuai tutorial. */
 window.TOKEN_APP_CONFIG = {
   // WAJIB: URL Google Apps Script berakhiran /exec.
-  API_URL: 'PASTE_URL_WEB_APP_APPS_SCRIPT_DI_SINI',
+  API_URL: 'https://script.google.com/macros/s/AKfycbwUOOOeY6Slr-M_wueej6P5WabgPfLfharOrVupIS4CC6u2r7NoU8lGe3JOQbn2QaY/exec',
 
   // OPSIONAL (DIREKOMENDASIKAN JIKA RATUSAN SISWA):
   // Cloudflare Worker public URL https://nama-worker.username.workers.dev/
